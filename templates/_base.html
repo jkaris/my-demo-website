@@ -1,0 +1,112 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Django and Bootstrap Demo Website">
+    <meta name="keywords" content="Django, HTML, CSS, JavaScript, Docker">
+    <meta name="author" content="Joseph Kariuki">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}MyWebsite{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'img/mywebsite.png' %}" alt="" width="36" height="36">MyWebsite
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="{% url 'blog_posts' %}">Articles</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{% url 'blog_list_api' %}">API</a>
+                                </li>
+                                {% if user.is_authenticated %}
+                                <li><a class="dropdown-item" href="{% url 'blog_article_create' %}">Create New
+                                        Article</a></li>
+                                {% endif %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                {% if user.is_authenticated %}
+                                <li><a class="dropdown-item" href="{% url 'account_logout' %}">Log out</a></li>
+                                <li><a class="dropdown-item" href="{% url 'account_change_password' %}">Change
+                                        password</a></li>
+                                {% else %}
+                                {% if user %}
+                                <li><a class="dropdown-item" href="{% url 'account_login' %}">Log In</a></li>
+                                <li><a class="dropdown-item" href="{% url 'account_signup' %}">Sign Up</a></li>
+                                {% endif %}
+                                {% endif %}
+                            </ul>
+                        </li>
+                    </ul>
+                    {% if blog_posts.count >= 1 %}
+                    <form class="d-flex" method="get" action="{% url 'blog_posts_search' %}">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            name="q">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    {% else %}
+                    <form class="d-flex flex-nowrap" method="get" action="{% url 'blog_posts_search' %}">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q"
+                            disabled>
+                        <button class="btn btn-outline-success disabled" type="submit">Search</button>
+                    </form>
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="ghfork">
+        <a href="https://github.com/jkariukidev/my-demo-website/fork">
+            <img src="{% static 'img/gh-fork.png' %}" alt="Fork me on GitHub">
+        </a>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <footer class="container pt-3 mt-4 text-muted border-top">
+        <span class="align-middle">Developed by <a href="https://josephkariuki.com">Joseph Kariuki</a> &copy;
+            2023</span>
+    </footer>
+    <script type="text/javascript" src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

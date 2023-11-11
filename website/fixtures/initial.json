@@ -1,0 +1,103 @@
+[
+  {
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+      "username": "test",
+      "password": "pbkdf2_sha256$390000$N2uWohhbc62aXFVuoImem2$bFNPzvf98NBgcD4s7mB5PbHFWyg21D2BH/NtstOQlJw=",
+      "email": "testuser@email.com",
+      "is_active": "True"
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+      "username": "webadmin",
+      "password": "pbkdf2_sha256$390000$LuJlL1rWtZ24TF3C0Yjh0n$j5bk75ZFxXAqHHfAwRFiDh8kVNG3jGLwbHCjGC0DMSI=",
+      "email": "webadmin@example.com",
+      "is_active": "True",
+      "is_staff": "True",
+      "is_superuser": "True"
+    }
+  },
+  {
+    "model": "website.blogcategory",
+    "pk": 1,
+    "fields": {
+      "created": "2023-02-19 14:33:06.838923+00:00",
+      "updated": "2023-02-19 14:33:06.838941+00:00",
+      "title": "General"
+    }
+  },
+  {
+    "model": "website.blogpost",
+    "pk": "6872356b-1c45-4a6c-9d6c-844832f1c6d2",
+    "fields": {
+      "title": "Lorem Ipsum",
+      "author": 1,
+      "body": "<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Mus mauris vitae ultricies leo. Vel facilisis volutpat est velit egestas. Non consectetur a erat nam at lectus urna duis convallis. Adipiscing tristique risus nec feugiat in fermentum. Vitae aliquet nec ullamcorper sit amet risus nullam eget. Volutpat consequat mauris nunc congue nisi vitae. Sit amet tellus cras adipiscing enim. Sed viverra ipsum nunc aliquet bibendum enim. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Feugiat scelerisque varius morbi enim nunc faucibus a. Vitae sapien pellentesque habitant morbi. Scelerisque varius morbi enim nunc faucibus. Justo eget magna fermentum iaculis eu non diam. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p><p><img alt=\"text-image\" src=\"https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1\" style=\"border-style:solid; border-width:1px; height:375px; margin:3px; width:565px\" /></p><p>Pulvinar etiam non quam lacus suspendisse faucibus interdum. Dictum at tempor commodo ullamcorper a lacus vestibulum. Purus faucibus ornare suspendisse sed. At in tellus integer feugiat scelerisque varius morbi enim. Mattis pellentesque id nibh tortor id aliquet. At elementum eu facilisis sed odio morbi quis. Pellentesque id nibh tortor id aliquet. Proin libero nunc consequat interdum varius sit amet. Eu lobortis elementum nibh tellus molestie. Cursus risus at ultrices mi tempus imperdiet nulla. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Convallis tellus id interdum velit laoreet id. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Sagittis purus sit amet volutpat consequat mauris nunc. Id diam vel quam elementum pulvinar etiam. Maecenas accumsan lacus vel facilisis volutpat. At volutpat diam ut venenatis tellus in metus vulputate. Nullam non nisi est sit amet.</p><h1>Elementum Integer</h1><p>Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. In vitae turpis massa sed elementum tempus egestas. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Massa enim nec dui nunc mattis enim ut tellus elementum. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Tempus urna et pharetra pharetra massa massa. In dictum non consectetur a erat nam at lectus. Et odio pellentesque diam volutpat. Massa sapien faucibus et molestie ac feugiat. Amet porttitor eget dolor morbi non arcu risus quis. Proin sed libero enim sed. Lacus viverra vitae congue eu consequat ac felis donec. Aliquam sem et tortor consequat. Interdum posuere lorem ipsum dolor sit. Eu ultrices vitae auctor eu augue ut. Blandit aliquam etiam erat velit scelerisque in dictum non consectetur. Ultricies mi eget mauris pharetra et ultrices neque ornare. Dis parturient montes nascetur ridiculus. Dignissim enim sit amet venenatis urna cursus eget.</p><h1>Fringilla phasellus</h1><p>Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Adipiscing tristique risus nec feugiat in fermentum. Eu turpis egestas pretium aenean. Pharetra vel turpis nunc eget. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Nunc non blandit massa enim. Metus dictum at tempor commodo ullamcorper a. Ipsum dolor sit amet consectetur adipiscing elit ut. Eget egestas purus viverra accumsan in nisl nisi. Integer vitae justo eget magna fermentum iaculis eu non. Libero id faucibus nisl tincidunt. Aliquam purus sit amet luctus venenatis. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Potenti nullam ac tortor vitae purus faucibus ornare. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Integer feugiat scelerisque varius morbi enim nunc faucibus.</p><table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px\"><thead><tr><th scope=\"col\">Aliquam purus sit amet</th><th scope=\"col\">Etiam dignissim diam</th></tr></thead><tbody><tr><td>luctus venenatis</td><td>magna fermentum</td></tr><tr><td>nterdum varius</td><td>feugiat scelerisque</td></tr></tbody></table><p>Eu feugiat pretium nibh ipsum consequat nisl. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Facilisis volutpat est velit egestas dui id ornare arcu. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Tellus orci ac auctor augue. Elit pellentesque habitant morbi tristique senectus et netus et. Rhoncus est pellentesque elit ullamcorper. Enim ut sem viverra aliquet eget sit. Fames ac turpis egestas integer eget aliquet. Bibendum arcu vitae elementum curabitur vitae nunc sed. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Ac orci phasellus egestas tellus rutrum tellus pellentesque. Lobortis elementum nibh tellus molestie nunc non blandit. Sit amet porttitor eget dolor morbi non arcu. Justo donec enim diam vulputate ut pharetra sit amet. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Aliquet lectus proin nibh nisl.</p><hr /><p>Convallis convallis tellus id interdum velit laoreet id donec. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Consectetur adipiscing elit ut aliquam. Sit amet mauris commodo quis imperdiet massa. Nibh tellus molestie nunc non blandit massa enim nec dui. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Magna fringilla urna porttitor rhoncus. Sed viverra ipsum nunc aliquet bibendum enim. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Sapien et ligula ullamcorper malesuada proin libero nunc. Scelerisque felis imperdiet proin fermentum leo vel. Quis enim lobortis scelerisque fermentum dui faucibus in. <span style=\"background-color:#e74c3c\">Massa enim nec dui nunc mattis enim. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed. Aliquam faucibus purus in massa tempor nec. Ac tortor dignissim convallis aenean et. Sociis natoque penatibus et magnis dis.</span></p><p>Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Ultrices vitae auctor eu augue ut lectus arcu. Non sodales neque sodales ut etiam. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Quisque sagittis purus sit amet. Orci eu lobortis elementum nibh tellus. Eros donec ac odio tempor orci. Mauris ultrices eros in cursus turpis. Nascetur ridiculus mus mauris vitae ultricies. Egestas maecenas pharetra convallis posuere morbi leo urna. Id velit ut tortor pretium viverra suspendisse. Aenean et tortor at risus. Etiam erat velit scelerisque in dictum non. Id semper risus in hendrerit gravida rutrum. Dolor purus non enim praesent elementum facilisis leo vel fringilla. Lectus arcu bibendum at varius vel. Convallis convallis tellus id interdum velit laoreet id donec.</p></div>",
+      "published": "2023-02-19 15:13:09.673077+00:00",
+      "created": "2023-02-19 15:13:09.676229+00:00",
+      "updated": "2023-02-19 15:13:09.676241+00:00",
+      "category": 1,
+      "status": "published"
+    }
+  },
+  {
+    "model": "website.blogpost",
+    "pk": "5709a7d2-0441-48af-966f-28e0efd40383",
+    "fields": {
+      "title": "Kenya",
+      "author": 1,
+      "body": "<p>Kenya is located on Africa&#39;s East Coast, across from the equator. To the north, it shares borders with Somalia, Ethiopia, and Sudan. To the west, Tanzania, Uganda, and east, the Indian Ocean. The country is roughly the size of Texas State, United States, with 225 000 square miles (582 646 square kilometers).</p><h2>Geography and Climate</h2><p>The central highlands rise from the Indian Ocean shore. The highlands are divided by the Great Rift Valley. East of the city is a rich plateau. One of Africa&#39;s most fruitful agricultural regions is the highlands. At 17,057 feet, Mount Kenya is the second-highest mountain in Africa.</p><p>On the coast, Kenya has a tropical climate, although the interior of the country is dry. It rains a lot between March and May. Although there is little rain in October and November, temperatures are still high.</p><p>Kenya experiences a lot of sunshine all year long. Both at night and in the morning, it is cool. The prolonged rainy season lasts from April through June. October through December make up the brief. Below is a map of Kenya.</p><h2>Map of Kenya</h2><p><img alt=\"\" src=\"https://www.worldatlas.com/r/w960-q80/upload/ab/e1/d6/counties-of-kenya-map.png\" style=\"border-style:solid; border-width:1px; height:498px; margin:1px; width:425px\" /></p><p>&nbsp;</p>",
+      "published": "2023-02-19 15:46:20.580626+00:00",
+      "created": "2023-02-19 15:46:20.585131+00:00",
+      "updated": "2023-02-19 15:46:20.585148+00:00",
+      "category": 1,
+      "status": "published"
+    }
+  },
+    {
+    "model": "website.blogpost",
+    "pk": "3ac6cd36-e038-4877-a587-7eff7659f1b2",
+    "fields": {
+      "title": "Kafka",
+      "author": 1,
+      "body": "<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p><p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. &quot;What&#39;s happened to me? &quot; he thought. It wasn&#39;t a dream.</p><p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls.</p><p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p><p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.</p><p>&quot;How about if I sleep a little bit longer and forget all this nonsense&quot;, he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn&#39;t get into that position. However hard he threw himself onto his right, he always rolled back to where he was.</p><p>He must have tried it a hundred times, shut his eyes so that he wouldn&#39;t have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before. &quot;Oh, God&quot;, he thought, &quot;what a strenuous career it is that I&#39;ve chosen! Travelling day in and day out. Doing business like this takes much more effort than doing your own business at home, and on top of that there&#39;s the curse of travelling, worries about making train connections, bad and irregular food, contact with different people all the time so that you can never get to know anyone or become friendly with them. It can all go to Hell! &quot; He felt a slight itch</p>",
+      "published": "2023-02-19 15:48:20.580626+00:00",
+      "created": "2023-02-19 15:48:20.585131+00:00",
+      "updated": "2023-02-19 15:48:20.585148+00:00",
+      "category": 1,
+      "status": "published"
+    }
+  },
+  {
+    "model": "website.blogpost",
+    "pk": "34f1b9fd-5c0c-4f76-8767-941f1d83f622",
+    "fields": {
+      "title": "Pangram",
+      "author": 1,
+      "body": "<p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack.</p><p>Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! &quot;Now fax quiz Jack! &quot; my brave ghost pled.</p><p>Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack!</p><p>Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard&rsquo;s job is to vex chumps quickly in fog. Watch &quot;Jeopardy! &quot;, Alex Trebek&#39;s fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him.</p><p>Adjusting quiver and bow, Zompyc[1] killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. Big July earthquakes confound zany experimental vow.</p><p>Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: twenty six letters - no forcing a jumbled quiz! Crazy Fredericka bought many very exquisite opal jewels. Sixty zippers were quickly picked from the woven jute bag. A quick movement of the enemy will jeopardize six gunboats.</p><p>All questions asked by five watch experts amazed the judge. Jack quietly moved up front and seized the big ball of wax. The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my</p>",
+      "published": "2023-02-19 15:49:20.580626+00:00",
+      "created": "2023-02-19 15:49:20.585131+00:00",
+      "updated": "2023-02-19 15:49:20.585148+00:00",
+      "category": 1,
+      "status": "published"
+    }
+  },
+  {
+    "model": "website.blogpost",
+    "pk": "69dbd9a1-b8f8-4b72-8ab8-8a409691b1f4",
+    "fields": {
+      "title": "Cicero",
+      "author": 1,
+      "body": "<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p><p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p><p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p><p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p><p>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>",
+      "published": "2023-02-19 15:50:20.580626+00:00",
+      "created": "2023-02-19 15:50:20.585131+00:00",
+      "updated": "2023-02-19 15:50:20.585148+00:00",
+      "category": 1,
+      "status": "published"
+    }
+  }
+]

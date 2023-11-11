@@ -1,0 +1,42 @@
+{% extends '_base.html' %}
+
+<title>{% block title %}{{ blog_article.title }} | {{ block.super }}{% endblock %}</title>
+
+{% block content %}
+    <div class="container">
+            <h1>{{ blog_article.title }}</h1>
+                <hr>
+                <p>
+                    {% if  blog_article.header_image %}
+                        <img src="{{ blog_article.header_image.url }}" class="img-thumbnail">
+                    {% endif %}
+                    {{ post.body|safe }}
+                </p>
+            <hr>
+            <small>Post by: {{ blog_article.author }} on {{ blog_article.published.date }}</small><br/>
+            <br>
+            <br>
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">
+                                {% autoescape off %}
+                                    {{ blog_article.body|safe }}
+                                {%  endautoescape %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="{% url 'blog_posts' %}" class="btn btn-secondary">Back</a>
+                {% if user.is_authenticated %}
+                    {% if user.id == blog_article.author.id %}
+                        <a href="{% url 'blog_article_update' blog_article.pk %}" class="btn btn-secondary">Edit Post</a>
+                        <a href="{% url 'blog_article_delete' blog_article.pk %}" class="btn btn-secondary">Delete Post</a>
+                    {% endif %}
+                {% endif %}
+            <br>
+    </div>
+{% endblock %}
