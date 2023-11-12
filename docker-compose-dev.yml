@@ -28,6 +28,7 @@ services:
         container_name: web4${COMPOSE_PROJECT_NAME}
         command: python /home/app/website/manage.py runserver 0.0.0.0:8000
         volumes:
+            - ./:/home/app/website
             - static_volume:/home/app/website/staticfiles
             - media_volume:/home/app/website/mediafiles
         ports:
