@@ -34,7 +34,11 @@ DATABASES = {
 }
 
 # Static files configuration
-USE_WHITENOISE, USE_S3, USE_CLOUDINARY = env("USE_WHITENOISE"), env("USE_S3"), env("USE_CLOUDINARY")
+USE_WHITENOISE, USE_S3, USE_CLOUDINARY = (
+    env("USE_WHITENOISE"),
+    env("USE_S3"),
+    env("USE_CLOUDINARY"),
+)
 if USE_WHITENOISE:
     # Static file management using WhiteNoise in production
     INSTALLED_APPS.insert(7, "whitenoise.runserver_nostatic")
@@ -56,7 +60,7 @@ if USE_S3:
     AWS_LOCATION = env("AWS_LOCATION")
     # STATICFILES_STORAGE = env("STATICFILES_STORAGE")
     # DEFAULT_FILE_STORAGE = env("DEFAULT_FILE_STORAGE")
-    STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+    STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, "static"),
     ]
@@ -70,15 +74,29 @@ if USE_CLOUDINARY:
         "CLOUD_NAME": env("CLOUDINARY_CLOUD_NAME"),
         "API_KEY": env("CLOUDINARY_API_KEY"),
         "API_SECRET": env("CLOUDINARY_API_SECRET"),
-        'SECURE': True,
-        'STATIC_IMAGES_EXTENSIONS': [
-            'jpg', 'jpe', 'jpeg', 'jpc', 'jp2', 'j2k', 'wdp', 'jxr',
-            'hdp', 'png', 'gif', 'webp', 'bmp', 'tif', 'tiff', 'ico'
+        "SECURE": True,
+        "STATIC_IMAGES_EXTENSIONS": [
+            "jpg",
+            "jpe",
+            "jpeg",
+            "jpc",
+            "jp2",
+            "j2k",
+            "wdp",
+            "jxr",
+            "hdp",
+            "png",
+            "gif",
+            "webp",
+            "bmp",
+            "tif",
+            "tiff",
+            "ico",
         ],
     }
     CLOUDINARY_URL = env("CLOUDINARY_URL")
-    STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+    STATICFILES_STORAGE = "cloudinary_storage.storage.StaticHashedCloudinaryStorage"
+    DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
     STATIC_URL = "static/"
     MEDIA_URL = "/media/"
     STATIC_ROOT = BASE_DIR / "staticfiles"
@@ -104,6 +122,16 @@ EMAIL_PORT = env("EMAIL_PORT")
 EMAIL_USE_TLS = env("EMAIL_USE_TLS")
 
 # Content Security Policy settings (django-csp)
-CSP_IMG_SRC = ("'self'", "https:",)
-CSP_STYLE_SRC = ("'self'", "'unsafe-inline'", "https:",)
-CSP_SCRIPT_SRC = ("'self'", "https:",)
+CSP_IMG_SRC = (
+    "'self'",
+    "https:",
+)
+CSP_STYLE_SRC = (
+    "'self'",
+    "'unsafe-inline'",
+    "https:",
+)
+CSP_SCRIPT_SRC = (
+    "'self'",
+    "https:",
+)

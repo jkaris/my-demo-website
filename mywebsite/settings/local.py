@@ -21,15 +21,15 @@ INSTALLED_APPS.insert(7, "whitenoise.runserver_nostatic")
 MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
 
 INSTALLED_APPS.extend(
-        [
-            "debug_toolbar",
-        ]
-    )
+    [
+        "debug_toolbar",
+    ]
+)
 MIDDLEWARE.extend(
-        [
-            "debug_toolbar.middleware.DebugToolbarMiddleware",
-        ]
-    )
+    [
+        "debug_toolbar.middleware.DebugToolbarMiddleware",
+    ]
+)
 
 hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
 INTERNAL_IPS = [ip[: ip.rfind(".")] + ".1" for ip in ips] + [
